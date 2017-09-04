@@ -11,6 +11,7 @@ import model.Privilege;
 import model.Service;
 import model.Status;
 import model.Table;
+import model.User;
 import model.UserClient;
 import model.UserProfessional;
 import model.UserType;

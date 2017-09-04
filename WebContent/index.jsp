@@ -11,7 +11,13 @@
 </head>
 <body>
 	<jsp:include page="/main/nav.jsp" />
-	<jsp:include page="/main/main.jsp" />
+	<%
+		if(request.getSession().getAttribute("user_id") != null){
+			%><jsp:include page="/main/main.jsp" /><%	
+		}else{
+			System.out.println("nao ha sessão");
+		}
+	%>
 	<jsp:include page="/main/footer.jsp" />
 </body>
 </html>

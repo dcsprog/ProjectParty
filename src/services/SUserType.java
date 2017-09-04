@@ -3,6 +3,7 @@ package services;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.Status;
 import model.UserType;
 
 public class SUserType implements Logic {
@@ -15,6 +16,10 @@ public class SUserType implements Logic {
 		
 		return null;
 	}
+	
+	/**/
+	
+
 
 	@Override
 	public String execute(HttpServletRequest req, HttpServletResponse res) throws Exception {
